@@ -6,10 +6,12 @@ resource "ibm_pi_instance" "glvm2" {
     pi_key_pair_name      = "dallas_sshkey"
     pi_sys_type           = "s922"
     pi_cloud_instance_id  = "42e748b5-9100-4810-b88b-1a19e47d1472"
-    pi_image_id           = "838f6cb7-7f69-47e6-bfe3-6f5f6d207efc"
+    pi_image_id           = "703c3e9d-78e6-4f54-963d-1524187c5b44"
     pi_storage_type       = "tier3"
     pi_pin_policy         = "none"
     pi_network {
+      network_name = c4-wdc-06-nw01
       network_id = "373f8b26-fed8-45f8-be81-49d8648a3320"
+      ip_address = 10.20.11.3
     }
 }
