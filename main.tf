@@ -10,8 +10,6 @@ resource "ibm_pi_instance" "glvm2" {
     pi_storage_type       = "tier3"
     pi_pin_policy         = "none"
     pi_network {
-      network_name = c4-wdc-06-nw01
       network_id = "373f8b26-fed8-45f8-be81-49d8648a3320"
-      ip_address = 10.20.11.3
-    }
+   }
 }
