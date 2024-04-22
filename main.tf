@@ -1,7 +1,7 @@
 resource "ibm_pi_instance" "glvm2" {
     pi_memory             = "2"
     pi_processors         = "0.25"
-    pi_instance_name      = "glvm1"
+    pi_instance_name      = "glvm2"
     pi_proc_type          = "shared"
     pi_key_pair_name      = "dallas_sshkey"
     pi_sys_type           = "s922"
